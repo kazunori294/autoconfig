@@ -22,7 +22,18 @@ https://s3.amazonaws.com/kazutan-autoconfig/ospf-lab.jpg
  * Configure demand circuit on R7
  * Configure flood reduction on R6
 
-* 06_ospf-sha-auth.rb
- * Configure SHA authentication between R5 and R7 (chain OSPF, key OSPFKEY)
- 
+* 07_ospf-basic-default-route.rb
+ * Generate default route injection into OSPF on R1
+ * Delete tthis configuration
+
+* 08_ospf-advanced-default-route.rb
+ * TBD
+
+* 09_ospf-change-area1-to-stub.rb
+ * Configure Area 1 as Stub Area
+ * Configure Area 1 as Totally Stub Area
+
+
+
+
 
