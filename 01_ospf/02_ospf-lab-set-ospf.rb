@@ -58,7 +58,9 @@ router ospf 1
 maximum-paths 32
 network 10.0.26.0 0.0.0.255 area 1
 network 10.0.12.0 0.0.0.255 area 0
+area 0 range 192.161.0.0 255.255.0.0
 area 1 range 192.168.0.0 255.255.0.0
+
 
 int gi1.12
 ip ospf authentication message-digest
@@ -73,6 +75,7 @@ router ospf 1
 maximum-paths 32
 network 10.0.36.0 0.0.0.255 area 1
 network 10.0.13.0 0.0.0.255 area 0
+area 0 range 192.161.0.0 255.255.0.0
 area 1 range 192.168.0.0 255.255.0.0
 
 int gi1.13
