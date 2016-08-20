@@ -30,6 +30,9 @@ https://s3.amazonaws.com/kazutan-autoconfig/ospf-lab.jpg
  * Configure Area 1 as Stub Area
  * Configure Area 1 as Totally Stub Area
 
+* 10_ospf-change-area2-to-nssa.rb
+ * Configure Area 2 as NSSA
+ * Configure Area 2 as Totally NSSA
 
 
 
