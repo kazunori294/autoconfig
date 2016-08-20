@@ -1,6 +1,5 @@
 require '/root/script/autoconfig/module/ios'
 
-
 device1 = "10.1.200.1"
 device2 = "10.1.200.2"
 device3 = "10.1.200.3"
@@ -26,39 +25,53 @@ ios6 = IOS.new(device6)
 ios7 = IOS.new(device7)
 
 
-#ios1.applyconfig("
-#configure replace flash:/init force
-#")
-
-ios1.verifyconfig("
-configure replace flash:/init force
+ios6.verifyconfig("
+  show ip route ospf
 ")
 
-ios2.verifyconfig("
-configure replace flash:/init force
+
+
+ios2.applyconfig("
+ router ospf 1
+ area 1 stub
 ")
 
-ios3.verifyconfig("
-configure replace flash:/init force
+
+ios3.applyconfig("
+ router ospf 1
+ area 1 stub
 ")
 
-ios4.verifyconfig("
-configure replace flash:/init force
+
+ios6.applyconfig("
+ router ospf 1
+ area 1 stub
 ")
 
-ios5.verifyconfig("
-configure replace flash:/init force
-")
+
+sleep (10)
+
 
 ios6.verifyconfig("
-configure replace flash:/init force
-")
-
-ios7.verifyconfig("
-configure replace flash:/init force
+  show ip route ospf
 ")
 
 
-#ios1.verifyconfig("
-#  show ip int b
-#")
+
+ios2.applyconfig("
+ router ospf 1
+ area 1 stub no-summary
+")
+
+
+ios3.applyconfig("
+ router ospf 1
+ area 1 stub no-summary
+")
+
+sleep (10)
+
+
+ios6.verifyconfig("
+  show ip route ospf
+")

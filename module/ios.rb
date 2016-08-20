@@ -1,10 +1,10 @@
 require 'pty'
 require 'expect'
 require 'open-uri'
-require './module/ios/echo_module'
-require './module/ios/applyconfig_module'
-require './module/ios/verifyconfig_module'
-require './module/ios/enablessh_module'
+require '/root/script/autoconfig/module/ios/echo_module'
+require '/root/script/autoconfig/module/ios/applyconfig_module'
+require '/root/script/autoconfig/module/ios/verifyconfig_module'
+require '/root/script/autoconfig/module/ios/enablessh_module'
 
 
 class IOS
