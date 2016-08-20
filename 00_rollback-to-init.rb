@@ -10,8 +10,6 @@ device6 = "10.1.200.6"
 device7 = "10.1.200.7"
 
 
-
-
 $user = "cisco"
 $userpass = "cisco"
 $enablepass = "cisco"
