@@ -34,7 +34,7 @@ https://s3.amazonaws.com/kazutan-autoconfig/ospf-lab.jpg
  * Configure Area 2 as NSSA
  * Configure Area 2 as Totally NSSA
 
-* BGP LAB
+# BGP LAB
 
 * 01_bgp-lab-set-interface.rb
  * Configure Interface
