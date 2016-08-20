@@ -8,6 +8,8 @@ https://s3.amazonaws.com/kazutan-autoconfig/ospf-lab.jpg
    * Check OSPF LAB image for loopback ospf configuration
    * Configure MD5 Authentication(key:cisco)  between R1-R2  R1-R3  R1-R4  R1-R5
    * area 1 is summarized as 192.168.0.0/16
+   * ###area 0 is summarized as 192.161.0.0/16
+   * ###E2 router is summarized as 192.167.0.0/16
 
 * 03_ospf-redis-connected.rb
  * Redistribute R7's loopback address to OSPF
