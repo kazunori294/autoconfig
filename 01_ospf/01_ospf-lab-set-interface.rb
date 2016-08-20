@@ -133,8 +133,6 @@ int gi1.15
 encapsulation dot1Q 15
 ip address 10.0.15.5 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.57
 encapsulation dot1Q 57
