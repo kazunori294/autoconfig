@@ -33,6 +33,22 @@ network 10.0.12.0 0.0.0.255 area 0
 network 10.0.13.0 0.0.0.255 area 0
 network 10.0.14.0 0.0.0.255 area 0
 network 10.0.15.0 0.0.0.255 area 0 
+!
+int gi1.12
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
+!
+int gi1.13
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
+!
+int gi1.14
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
+!
+int gi1.15
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
 
 ")
 
@@ -44,6 +60,9 @@ network 10.0.26.0 0.0.0.255 area 1
 network 10.0.12.0 0.0.0.255 area 0
 area 1 range 192.168.0.0 255.255.0.0
 
+int gi1.12
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
 
 ")
 
@@ -56,6 +75,11 @@ network 10.0.36.0 0.0.0.255 area 1
 network 10.0.13.0 0.0.0.255 area 0
 area 1 range 192.168.0.0 255.255.0.0
 
+int gi1.13
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
+
+
 ")
 
 
@@ -67,6 +91,9 @@ maximum-paths 32
 network 10.0.14.0 0.0.0.255 area 0
 network 10.0.47.0 0.0.0.255 area 2
 
+int gi1.14
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
 
 ")
 
@@ -77,6 +104,10 @@ router ospf 1
 maximum-paths 32
 network 10.0.15.0 0.0.0.255 area 0
 network 10.0.57.0 0.0.0.255 area 2
+
+int gi1.15
+ip ospf authentication message-digest
+ip ospf message-digest-key 1 md5 cisco
 
 ")
 

@@ -35,29 +35,21 @@ int gi1.12
 encapsulation dot1Q 12
 ip address 10.0.12.1 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.13
 encapsulation dot1Q 13
 ip address 10.0.13.1 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.14
 encapsulation dot1Q 14
 ip address 10.0.14.1 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.15
 encapsulation dot1Q 15
 ip address 10.0.15.1 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int lo0
 ip address 8.8.8.1 255.255.255.255
@@ -74,8 +66,6 @@ int gi1.12
 encapsulation dot1Q 12
 ip address 10.0.12.2 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.26
 encapsulation dot1Q 26
@@ -98,8 +88,6 @@ int gi1.13
 encapsulation dot1Q 13
 ip address 10.0.13.3 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.36
 encapsulation dot1Q 36
@@ -123,8 +111,6 @@ int gi1.14
 encapsulation dot1Q 14
 ip address 10.0.14.4 255.255.255.0
 no shut
-ip ospf authentication message-digest
-ip ospf message-digest-key 1 md5 cisco
 !
 int gi1.47
 encapsulation dot1Q 47
