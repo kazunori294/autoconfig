@@ -11,9 +11,6 @@ https://s3.amazonaws.com/kazutan-autoconfig/ospf-lab.jpg
 
 * 03_ospf-redis-connected.rb
  * Redistribute R7's loopback address to OSPF
- 
-* 03_ospf-redis-connected.rb
- * Redistribute R7's loopback address to OSPF
 
 * 04_ospf-tshift-R3.rb
  * Traffic shift on R3
