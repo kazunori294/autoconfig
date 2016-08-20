@@ -57,8 +57,3 @@ configure replace flash:/init force
 ios7.verifyconfig("
 configure replace flash:/init force
 ")
-
-
-#ios1.verifyconfig("
-#  show ip int b
-#")
